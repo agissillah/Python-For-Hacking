@@ -47,7 +47,7 @@ UDP adalah protokol *connectionless*. Tidak perlu membuat koneksi, langsung kiri
 
 ## Cara Menjalankan
 
-### Jalankan TCP Server dan Client
+### Jalankan TCP Server dan Socket
 
 1. **Jalankan Server terlebih dahulu:**
 ```bash
@@ -58,7 +58,7 @@ python TCP/tcpServer.py
 
 ![TCP Server](https://raw.githubusercontent.com/agissillah/Phyton-For-Hacking/main/TCP/TcpServer.png)
 
-2. **Di terminal lain, jalankan Client:**
+2. **Di terminal lain, jalankan Socket:**
 ```bash
 python TCP/tcpSocket.py
 ```
@@ -85,7 +85,7 @@ python UDP/udpServer.py
 python UDP/udpSocket.py
 ```
 
-**Output Client:**
+**Output Socket:**
 
 ![UDP Socket](./UDP/UdpSocket.png)
 
@@ -100,18 +100,9 @@ python UDP/udpSocket.py
 │   ├── tcpServer.py
 │   └── tcpSocket.py
 ├── UDP/
-│   ├── udpServer.py
-│   └── udpSocket.py
-├── TcpServer.png
-├── TcpSocket.png
-├── UdpServer.png
-└── UdpSocket.png
+   ├── udpServer.py
+   └── udpSocket.py
 ```
-
-## Requirements
-
-- Python 3.6 atau lebih baru
-- Tidak perlu library tambahan (menggunakan `socket` built-in)
 
 ## Catatan
 
@@ -120,10 +111,3 @@ python UDP/udpSocket.py
 - Gunakan `Ctrl+C` untuk menghentikan server
 - Untuk testing di jaringan lokal, ganti `127.0.0.1` dengan IP address server
 
-## Lisensi
-
-Proyek ini dibuat untuk tujuan pembelajaran.
-
-## Kontribusi
-
-Silakan fork dan submit pull request untuk improvement!
