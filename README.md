@@ -56,7 +56,7 @@ python TCP/tcpServer.py
 
 2. **Di terminal lain, jalankan Client:**
 ```bash
-python TCP/tcpSocket.py
+python tcpSocket.py
 ```
 
 3. **Masukkan pesan** yang ingin dikirim, server akan membalas dengan huruf kapital.
@@ -65,12 +65,12 @@ python TCP/tcpSocket.py
 
 1. **Jalankan Server terlebih dahulu:**
 ```bash
-python UDP/udpServer.py
+python udpServer.py
 ```
 
 2. **Di terminal lain, jalankan Client:**
 ```bash
-python UDP/udpSocket.py
+python udpSocket.py
 ```
 
 3. **Masukkan pesan** yang ingin dikirim, server akan membalas dengan huruf kapital.
