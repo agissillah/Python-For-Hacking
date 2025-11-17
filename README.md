@@ -51,7 +51,7 @@ UDP adalah protokol *connectionless*. Tidak perlu membuat koneksi, langsung kiri
 
 1. **Jalankan Server terlebih dahulu:**
 ```bash
-python tcpServer.py
+python TCP/tcpServer.py
 ```
 
 **Output Server:**
@@ -65,7 +65,7 @@ python TCP/tcpSocket.py
 
 **Output Client:**
 
-![TCP Client Output](tcpSocket.png)
+![TCP Client Output](TcpSocket.png)
 
 3. **Masukkan pesan** yang ingin dikirim, server akan membalas dengan huruf kapital.
 
@@ -102,12 +102,16 @@ python UDP/udpSocket.py
 ├── UDP/
 │   ├── udpServer.py
 │   └── udpSocket.py
-└── screenshots/
-    ├── tcp_server.png
-    ├── tcp_client.png
-    ├── udp_server.png
-    └── udp_client.png
+├── TcpServer.png
+├── TcpSocket.png
+├── UdpServer.png
+└── UdpSocket.png
 ```
+
+## Requirements
+
+- Python 3.6 atau lebih baru
+- Tidak perlu library tambahan (menggunakan `socket` built-in)
 
 ## Catatan
 
@@ -116,6 +120,9 @@ python UDP/udpSocket.py
 - Gunakan `Ctrl+C` untuk menghentikan server
 - Untuk testing di jaringan lokal, ganti `127.0.0.1` dengan IP address server
 
+## Lisensi
+
+Proyek ini dibuat untuk tujuan pembelajaran.
 
 ## Kontribusi
 
