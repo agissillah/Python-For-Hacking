@@ -1,8 +1,8 @@
-# Proyek Socket TCP dan UDP Sederhana
+# Proyek Pembelajaran Socket TCP dan UDP
 
-Proyek ini berisi implementasi dasar komunikasi client-server menggunakan protokol TCP dan UDP dengan Python.
+Proyek ini berisi contoh implementasi komunikasi client–server menggunakan protokol TCP dan UDP. Seluruh contoh dibuat dengan Python untuk membantu memahami cara kerja socket pada kedua protokol tersebut.
 
-## Penjelasan Kode
+## Penjelasan
 
 ### 1. TCP (Transmission Control Protocol)
 
