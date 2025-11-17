@@ -51,12 +51,12 @@ UDP adalah protokol *connectionless*. Tidak perlu membuat koneksi, langsung kiri
 
 1. **Jalankan Server terlebih dahulu:**
 ```bash
-python TCP/tcpServer.py
+python tcpServer.py
 ```
 
 **Output Server:**
 
-![TCP Server Output](screenshots/tcp_server.png)
+![TCP Server Output](TcpServer.png)
 
 2. **Di terminal lain, jalankan Client:**
 ```bash
@@ -65,7 +65,7 @@ python TCP/tcpSocket.py
 
 **Output Client:**
 
-![TCP Client Output](screenshots/tcp_client.png)
+![TCP Client Output](tcpSocket.png)
 
 3. **Masukkan pesan** yang ingin dikirim, server akan membalas dengan huruf kapital.
 
@@ -78,7 +78,7 @@ python UDP/udpServer.py
 
 **Output Server:**
 
-![UDP Server Output](screenshots/udp_server.png)
+![UDP Server Output](UdpServer.png)
 
 2. **Di terminal lain, jalankan Client:**
 ```bash
@@ -87,7 +87,7 @@ python UDP/udpSocket.py
 
 **Output Client:**
 
-![UDP Client Output](screenshots/udp_client.png)
+![UDP Client Output](UdpSocket.png)
 
 3. **Masukkan pesan** yang ingin dikirim, server akan membalas dengan huruf kapital.
 
