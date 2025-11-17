@@ -8,13 +8,13 @@ Proyek ini berisi contoh implementasi komunikasi client–server menggunakan pro
 
 TCP adalah protokol *connection-oriented*. Klien harus terhubung dulu ke server sebelum bisa bertukar data.
 
-- **TCP/tcpServer.py** :
+- **tcpServer.py** :
   - Membuat socket TCP ( `SOCK_STREAM` ) dan mengikatnya ke `127.0.0.1` port `12345` .
   - Server `listen` (mendengarkan) koneksi masuk.
   - Saat klien terhubung ( `server.accept()` ), server menerima pesan, mengubahnya jadi huruf kapital ( `string.upper()` ), dan mengirimkannya kembali ke klien.
   - Koneksi ditutup.
 
-- **TCP/tcpSocket.py** :
+- **tcpSocket.py** :
   - Membuat socket TCP dan melakukan `connect` ke server di `127.0.0.1:12345` .
   - Meminta input dari pengguna ( masukkan pesan... ).
   - Mengirim pesan tersebut ke server, menerima balasannya (yang sudah di-uppercase), dan mencetaknya.
@@ -23,12 +23,12 @@ TCP adalah protokol *connection-oriented*. Klien harus terhubung dulu ke server 
 
 UDP adalah protokol *connectionless*. Tidak perlu membuat koneksi, langsung kirim data.
 
-- **UDP/udpServer.py** :
+- **udpServer.py** :
   - Membuat socket UDP ( `SOCK_DGRAM` ) dan mengikatnya ke `127.0.0.1` port `12345` .
   - Server menunggu data dengan `recvfrom()`, mengubah pesan ke huruf kapital.
   - Mengirim balasan ke alamat klien menggunakan `sendto()`.
 
-- **UDP/udpSocket.py** :
+- **udpSocket.py** :
   - Membuat socket UDP.
   - Meminta input dari pengguna.
   - Langsung mengirim data ke server menggunakan `sendto()` ke `127.0.0.1:12345`.
@@ -63,7 +63,7 @@ python TCP/tcpServer.py
 python TCP/tcpSocket.py
 ```
 
-**Output Socket:**
+**Output Client:**
 
 ![TCP Socket](https://raw.githubusercontent.com/agissillah/Phyton-For-Hacking/main/TCP/TcpSocket.png)
 
@@ -85,7 +85,7 @@ python UDP/udpServer.py
 python UDP/udpSocket.py
 ```
 
-**Output Socket:**
+**Output Client:**
 
 ![UDP Socket](./UDP/UdpSocket.png)
 
