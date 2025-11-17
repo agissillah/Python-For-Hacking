@@ -54,10 +54,18 @@ UDP adalah protokol *connectionless*. Tidak perlu membuat koneksi, langsung kiri
 python TCP/tcpServer.py
 ```
 
+**Output Server:**
+
+![TCP Server Output](screenshots/tcp_server.png)
+
 2. **Di terminal lain, jalankan Client:**
 ```bash
-python tcpSocket.py
+python TCP/tcpSocket.py
 ```
+
+**Output Client:**
+
+![TCP Client Output](screenshots/tcp_client.png)
 
 3. **Masukkan pesan** yang ingin dikirim, server akan membalas dengan huruf kapital.
 
@@ -65,13 +73,21 @@ python tcpSocket.py
 
 1. **Jalankan Server terlebih dahulu:**
 ```bash
-python udpServer.py
+python UDP/udpServer.py
 ```
+
+**Output Server:**
+
+![UDP Server Output](screenshots/udp_server.png)
 
 2. **Di terminal lain, jalankan Client:**
 ```bash
-python udpSocket.py
+python UDP/udpSocket.py
 ```
+
+**Output Client:**
+
+![UDP Client Output](screenshots/udp_client.png)
 
 3. **Masukkan pesan** yang ingin dikirim, server akan membalas dengan huruf kapital.
 
@@ -83,9 +99,14 @@ python udpSocket.py
 ├── TCP/
 │   ├── tcpServer.py
 │   └── tcpSocket.py
-└── UDP/
-    ├── udpServer.py
-    └── udpSocket.py
+├── UDP/
+│   ├── udpServer.py
+│   └── udpSocket.py
+└── screenshots/
+    ├── tcp_server.png
+    ├── tcp_client.png
+    ├── udp_server.png
+    └── udp_client.png
 ```
 
 ## Catatan
@@ -95,3 +116,7 @@ python udpSocket.py
 - Gunakan `Ctrl+C` untuk menghentikan server
 - Untuk testing di jaringan lokal, ganti `127.0.0.1` dengan IP address server
 
+
+## Kontribusi
+
+Silakan fork dan submit pull request untuk improvement!
